@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar'
 import NavbarLayout from './components/Navbar'
 import ContentSection from './components/ContentSection'
 
-const Dashboard = () => {
+const DashboardLayout = () => {
     return (
       <div className="flex flex-col h-screen">
         {/* Navbar at the top */}
@@ -25,4 +25,4 @@ const Dashboard = () => {
   }
   
 
-export default Dashboard;
+export default DashboardLayout;

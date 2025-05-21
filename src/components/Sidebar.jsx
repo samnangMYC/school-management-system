@@ -3,6 +3,7 @@ import { IoHomeOutline } from 'react-icons/io5';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PiChalkboardTeacherFill } from "react-icons/pi";
+import { Link } from 'react-router-dom';
 
 export const sidebarData = [
   {
@@ -12,16 +13,16 @@ export const sidebarData = [
         label: 'HomePage',
         icon: IoHomeOutline,
         children: [
-          { label: 'Dashboard' },
+          { label: 'Dashboard',path: "/" },
         ]
       },
       {
         label: 'Professor',
         icon: PiChalkboardTeacherFill,
         children: [
-          { label: 'All Professor' },
-          { label: 'Add All Professor' },
-          { label: 'Edit Professor' }
+          { label: 'All Professor',path: "/" },
+          { label: 'Add All Professor',path: "/" },
+          { label: 'Edit Professor',path: "/" }
         ]
       }
     ]
@@ -88,12 +89,14 @@ const Sidebar = () => {
                       className="overflow-hidden ml-8 mt-1 flex flex-col gap-1 text-[14px] mb-2 text-gray-700"
                     >
                       {item.children.map((sub, i) => (
+                        <Link to={sub.path}>
                         <span
                           key={i}
                           className="cursor-pointer hover:text-blue-600 transition"
                         >
                           {sub.label}
                         </span>
+                        </Link>
                       ))}
                     </motion.div>
                   )}

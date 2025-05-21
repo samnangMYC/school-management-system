@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import './App.css'
-import Sidebar from './components/Sidebar'
-import Dashboard from './Dashboard'
 
+import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DashboardLayout from './DashboardLayout';
+import HomePage from './HomePage';
 
 function App() {
  
 
   return (
    <>
- 
-    <Dashboard />
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/dashboard" element={<DashboardLayout />} />
+      </Routes>
+    </BrowserRouter>
    
    </>
   )
