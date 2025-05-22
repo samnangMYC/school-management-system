@@ -1,7 +1,7 @@
 import React from 'react'
 import { HiMiniUserCircle } from "react-icons/hi2";
 
-const ContentSection = () => {
+const DataLayoutPage = () => {
   return (
     <div>
         {/* Student Card Section */}
@@ -52,4 +52,4 @@ const ContentSection = () => {
   )
 }
 
-export default ContentSection
+export default DataLayoutPage

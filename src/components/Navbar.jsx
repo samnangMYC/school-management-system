@@ -6,22 +6,22 @@ import { FaMoon, FaRegBell, FaRegCommentDots, FaCog } from 'react-icons/fa';
 
 const NavbarLayout = () => {
   return (
-   <div className="fixed top-0 w-full z-40 flex items-center justify-between h-16 px-6 shadow-sm bg-white">
+   <div className="fixed top-0 w-full z-40 flex items-center justify-between h-18 px-6 shadow-sm bg-white">
 
       {/* Left: Logo, Menu & Search */}
       <div className="flex items-center gap-4 flex-grow">
         {/* Logo */}
-        <div className="flex items-center w-50 gap-2 flex-shrink-0">
+        <div className="flex items-center w-53 gap-2 flex-shrink-0">
           <img src="https://img.icons8.com/ios-filled/50/8A2BE2/graduation-cap.png" alt="Logo" className="h-8" />
-          <span className="text-xl sm:hidden lg:block font-bold text-purple-600 uppercase">DIU Admin</span>
+          <span className="text-2xl sm:hidden lg:block font-bold text-purple-600 uppercase">DIU Admin</span>
         </div>
 
         {/* Menu Icon */}
-        <MdMenuOpen size={24} className="text-gray-500 cursor-pointer" />
+        <MdMenuOpen size={40} className="text-gray-500 cursor-pointer" />
 
         {/* Search Bar */}
-        <div className="flex items-center bg-gray-100 px-4 py-2 rounded-full w-full max-w-sm">
-          <FiSearch className="text-gray-400" />
+        <div className="flex items-center bg-gray-100 px-4 py-3 rounded-full w-full max-w-sm">
+          <FiSearch size={22} className="text-gray-400" />
           <input
             type="text"
             placeholder="Search"
